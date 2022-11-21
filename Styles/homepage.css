@@ -14,7 +14,7 @@ body {
   background-color: #f2f4fc;
 }
 
-/*!------------------------------ NAVBAR --------------------- */
+/*!------------------------------ HEADER / NAVBAR --------------------- */
 
 header {
   width: 100%;
@@ -25,7 +25,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  border: 1px solid black;
 }
 nav img {
   padding-bottom: 1vw;
@@ -67,92 +66,211 @@ a:visited {
   height: 2.8em;
 }
 
-/*!------------------------------ SECTION 1 --------------------- */
-
-/*? LEFT */
-
-/* .empower {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.empower-left {
-  background-color: antiquewhite;
-  margin-top: 5%;
-  margin-right: 60%;
-  display: flex;
-  flex-direction: column;
-} */
-
-/*? RIGHT */
-
-/* .empower-right {
-  margin-left: 40%;
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-img {
-  width: 100px;
-
-  object-fit: contain;
-} */
-
-/* .empower {
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 7%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.caja-izq {
-  background-color: cornflowerblue;
-  width: 50vw;
-  height: 50vw;
-  border: 1px solid black;
-  margin: auto;
-  padding-left: 3%;
-  font-size: 5em;
-}
-.caja-dch {
-  background-color: darkolivegreen;
-  width: 60vw;
-  height: 50vw;
-  border: 1px solid black;
-  margin: auto;
-}
-
-.empower p {
-  position: initial;
-  font-size: 2vw;
-} */
+/*!------------------------------ SECTION 1 EMPOWER --------------------- */
 
 .empower {
-  position: absolute;
   width: 1440px;
   height: 650px;
   left: calc(50% - 1440px / 2);
   top: 222px;
-  background-color: darkgoldenrod;
+  height: 650px;
+
+  margin-top: 4vw;
+  margin-bottom: 15vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+/*todo IZQUIERDA */
+
+.caja-izq {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.empower h1 {
+  font-size: 450%;
+  padding-top: 3vw;
+  margin-bottom: 2vw;
+}
+
+.empower p {
+  font-size: 150%;
+  margin: 0;
+  margin-bottom: 2vw;
+}
+
+.empower button {
+  margin-top: 1vw;
+  margin-right: 1vw;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: row;
+  width: 180%;
+}
+
+/*todo DERECHA */
+
+.caja-dch {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.empower img {
+  width: 100%;
+}
+
+/*!------------------------------ SECTION 2 LOGOS-BAR --------------------- */
 
 .logos-bar {
   display: flex;
   flex-direction: row;
-  filter: grayscale(1.0);
+  filter: grayscale(1);
   justify-content: space-around;
-
-  /* position: absolute;
-  width: 1440px;
-  height: 96px;
-  left: calc(50% - 1440px / 2);
-  top: 1002px; */
-  position: inherit;
   margin: auto;
   top: 1002px;
+  height: 96px;
+  min-height: 4vw;
+}
+
+.logos-bar img {
+  height: 40%;
+}
+
+/*!------------------------------ SECTION 3 CARDS-RECENT-PROJECTS --------------------- */
+
+.card-section {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-section h2 {
+  font-size: 300%;
+}
+
+.card-section span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recent-projects-card {
+  background-color: white;
+  width: 31%;
+  min-height: 30%;
+}
+
+.recent-projects-card h3,
+p,
+a {
+  margin-top: 1vw;
+  margin-left: 2vw;
+}
+
+.recent-projects-card h3 {
+  font-size: 150%;
+}
+
+.recent-projects-card p {
+  padding-bottom: 1.5vw;
+}
+
+.recent-projects-card a {
+}
+
+.recent-projects-card img {
+  max-width: 100%;
+}
+
+/*!------------------------------ SECTION 4 HEAR-OUR-CLIENTS --------------------- */
+
+.hear-our-clients {
+  margin-left: -10%;
+  margin-top: 2vw;
+  width: 120%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 30vw;
+  background-image: url("../public/orbit.png");
+  background-color: #292e47;
+}
+
+.hear-our-clients h3 {
+  position: absolute;
+  color: white;
+  font-size: 350%;
+  padding-bottom: 25vw;
+  padding-top: 5vw;
+}
+
+.hear-our-clients h4 {
+  color: #ffc600;
+  font-size: 200%;
+  position: absolute;
+  text-align: center;
+  padding-left: 23%;
+  padding-right: 23%;
+}
+
+.emojis {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 100%;
+  grid-column-gap: 160%;
+  margin-left: -50%;
+  margin-bottom: 10%;
+}
+
+.emojis img {
+  width: 60%;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  
+}
+
+.hear-our-clients a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+/*!------------------------------ SECTION 5 OUR-SERVICES --------------------- */
+.our-services {
+  border: 1px solid black;
+  margin-top: 2vw;
+}
+
+/*!------------------------------ SECTION 6 QUESTIONS-EMAIL --------------------- */
+.questions-email {
+  border: 1px solid black;
+  margin-top: 2vw;
+}
+
+/*!------------------------------ SECTION 7 FOOTER --------------------- */
+
+footer {
+  border: 1px solid black;
+  margin-top: 2vw;
 }
