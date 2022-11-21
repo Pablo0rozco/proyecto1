@@ -12,7 +12,7 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="../public/circle.svg" alt="" />
+          <img src="../public/logos/circle.svg" alt="circle-logo" />
         </div>
 
         <div class="navigation">
@@ -46,17 +46,17 @@
       </article>
 
       <article class="caja-dch">
-        <img src="../public/hero-image.png" alt="" />
+        <img src="../public/hero-section/hero-image.png" alt="hero-image" />
       </article>
     </section>
 
     <!-- SECTION LOGOS-BAR -->
     <section class="logos-bar">
-      <img src="../public/airbnb-logo.svg" alt="airbnb-logo" />
-      <img src="../public/google-logo.svg" alt="google-logo" />
-      <img src="../public/microsoft-logo.svg" alt="microsoft-logo" />
-      <img src="../public/fedex-logo.svg" alt="fedex-logo" />
-      <img src="../public/amazon-logo.svg" alt="amazon-logo" />
+      <img src="../public/logos/airbnb-logo.svg" alt="airbnb-logo" />
+      <img src="../public/logos/google-logo.svg" alt="google-logo" />
+      <img src="../public/logos/microsoft-logo.svg" alt="microsoft-logo" />
+      <img src="../public/logos/fedex-logo.svg" alt="fedex-logo" />
+      <img src="../public/logos/amazon-logo.svg" alt="amazon-logo" />
     </section>
 
     <!-- SECTION CARDS-RECENT-PROJECTS -->
@@ -65,23 +65,24 @@
         Recent <br />
         Projects
       </h2>
+
       <span>
         <article class="recent-projects-card">
-          <img src="../public/1.jpg" alt="Simplify-img" />
+          <img src="../public/projects-section/1.jpg" alt="Simplify-img" />
           <h3>Simplify</h3>
           <p>UI Design & App Development</p>
           <a href="">Learn More</a>
         </article>
 
         <article class="recent-projects-card">
-          <img src="../public/2.jpg" alt="Simplify-img" />
+          <img src="../public/projects-section/2.jpg" alt="Simplify-img" />
           <h3>Dashcoin</h3>
           <p>Web Development</p>
           <a href="">Learn More</a>
         </article>
 
         <article class="recent-projects-card vectorify">
-          <img src="../public/3.png" alt="Simplify-img" />
+          <img src="../public/projects-section/3.png" alt="Simplify-img" />
           <h3>Vectorify</h3>
           <p>User Experience Design</p>
           <a href="">Learn More</a>
@@ -97,82 +98,137 @@
         working with you."
       </h4>
       <div class="emojis">
-        <img src="../public/memoji-1.png" alt="emoji-blonde" />
-        <img src="../public/memoji-2.png" alt="emoji-cap" />
-        <img src="../public/memoji-3.png" alt="emoji-beard" />
-        <img src="../public/memoji-4.png" alt="emoji-brunette" />
+        <img
+          src="../public/testimonial-section/memoji-1.png"
+          alt="emoji-blonde"
+        />
+        <img src="../public/testimonial-section/memoji-2.png" alt="emoji-cap" />
+        <img
+          src="../public/testimonial-section/memoji-3.png"
+          alt="emoji-beard"
+        />
+        <img
+          src="../public/testimonial-section/memoji-4.png"
+          alt="emoji-brunette"
+        />
       </div>
-      
 
       <div class="profile">
         <img
-          src="../public/profile.png"
+          src="../public/testimonial-section/profile.png"
           alt="Kristin-watson"
           class="profile-img"
         />
-        <h5>Kristin Watson</h5>
-        <a href="">Booking.com</a>
+
+        <div class="text-profile">
+          <h5>Kristin Watson</h5>
+          <a href="">Booking.com</a>
+        </div>
       </div>
     </section>
 
     <!-- SECTION OUR-SERVICES -->
-    <section class="our-services">
-      <h3>Our Services</h3>
-      <article>
-        <img src="" alt="pencil-logo" />
-        <h4>User Interface Design</h4>
-        <p>
-          Circle provides you with a stunning user interface design that is
-          accesible to everyone.
-        </p>
-        <a href="">Learn More</a>
-      </article>
+    <section class="card-section our-services">
+      <h2>Our Services</h2>
+      <span>
+        <article class="recent-projects-card">
+          <img src="../public/services-section/1.svg" alt="pencil-logo" />
+          <h4>User Interface Design</h4>
+          <p>
+            Circle provides you with a stunning user interface design that is
+            accesible to everyone.
+          </p>
+          <a href="">Learn More</a>
+        </article>
 
-      <article>
-        <img src="" alt="pencil-logo" />
-        <h4>User Experience Design</h4>
-        <p>
-          Circle always focuses on delivering the best user experience to your
-          customers
-        </p>
-        <a href="">Learn More</a>
-      </article>
+        <article class="recent-projects-card">
+          <img src="../public/services-section/2.svg" alt="pencil-logo" />
+          <h4>User Experience Design</h4>
+          <p>
+            Circle always focuses on delivering the best user experience to your
+            customers
+          </p>
+          <a href="">Learn More</a>
+        </article>
 
-      <article>
-        <img src="" alt="html-logo" />
-        <h4>Application Development</h4>
-        <p>
-          We develop high-queality mobile and web applications using the latest
-          technology stack.
-        </p>
-        <a href="">Learn More</a>
-      </article>
+        <article class="recent-projects-card">
+          <img src="../public/services-section/3.svg" alt="html-logo" />
+          <h4>Application Development</h4>
+          <p>
+            We develop high-queality mobile and web applications using the
+            latest technology stack.
+          </p>
+          <a href="">Learn More</a>
+        </article>
+      </span>
     </section>
 
     <!-- SECTION QUESTIONS-EMAIL -->
     <section class="questions-email">
-      <img src="" alt="yellow-background" />
       <h2>Do you have any questions?</h2>
       <h3>Let us help you!</h3>
 
       <form action="">
+
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25Z"
+            stroke="#292E47"
+            stroke-width="1.25"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M25 5H5C3.625 5 2.5 6.125 2.5 7.5L15 16.25L27.5 7.5C27.5 6.125 26.375 5 25 5Z"
+            stroke="#292E47"
+            stroke-width="1.25"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+          />
+        </svg>
+
         <input type="email" value="Enter your email" />
         <!-- añadir logo email -->
-        <button>Subscribe</button>
+        <button class="blue-btn">Subscribe</button>
       </form>
     </section>
     <!-- FOOTER -->
     <footer>
-      <img src="" alt="logo-circle" />
+
+      <div>
+       <img src="../public/logos/circle.svg" alt="logo-circle" />
       <address>
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      </address>
-      <a href="">Team</a>
+        <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
+      </address> 
+      </div>
+
+      
+
+
+      <div class="anchor-footer">
+        <span>
+          <a href="">Team</a>
       <a href="">Services</a>
-      <a href="">About Us</a>
-      <a href="">Press</a>
+      <a href="">About Us</a> 
+        </span>
+
+        <span>
+           <a href="">Press</a>
       <a href="">Proyects</a>
-      <a href="">Privacy Policy</a>
+      <a href="">Privacy Policy</a> 
+        </span>
+       
+     
+      </div>
+
+      
     </footer>
   </body>
 </html>
