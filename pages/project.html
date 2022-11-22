@@ -21,7 +21,9 @@
           <a href="./homepage.html#our-services"><h3>Services</h3></a>
         </div>
 
-        <button class="blue-btn">Contact Us</button>
+        <button class="blue-btn">
+          <a class="header-btn" href="./contact.html">Contact Us</a>
+        </button>
       </nav>
     </header>
 
@@ -30,11 +32,17 @@
 
       <span>
         <h2>UI Design & App Development</h2>
-        <h3>Completed on June 22, 2021</h3>
+        <h3>
+          Completed on &nbsp <span class="data-holder"></span>
+        </h3>
       </span>
 
       <article>
-        <img src="../public/projects-section/project-img.jpg" alt="article img" />
+        <img
+          src="../public/projects-section/project-img.jpg"
+          alt="article img"
+          class="section-simplify-img"
+        />
         <p>
           Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui
           esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
@@ -42,57 +50,57 @@
           aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis
           id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore
           cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
-          sint deserunt ut voluptate aute id deserunt nisi. </p>
-         
-        <p>  
-          Aliqua id fugiat
-          nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id
-          quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum
-          minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
-          deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud
-          irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
-          deserunt mollit dolore cillum minim tempor enim. Elit aute irure
-          tempor cupidatat incididunt sint deserunt ut voluptate aute id
-          deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis
-          ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat
-          incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis
-          id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore
-          cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
-          sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat
-          nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor
-          enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
-          voluptate aute id deserunt nis cillum minim tempor enim.
+          sint deserunt ut voluptate aute id deserunt nisi.        
+          Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
+          quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt
+          mollit dolore cillum minim tempor enim. Elit aute irure tempor
+          cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+          Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui
+          esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+          Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate
+          aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis
+          id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor
+          cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis
+          ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit
+          dolore cillum minim tempor enim. Elit aute irure tempor cupidatat
+          incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id
+          fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim
+          tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt
+          ut voluptate aute id deserunt nis cillum minim tempor enim.
         </p>
       </article>
     </section>
+
+    <!-- PROJECTOS -->
 
     <section class="card-section">
       <h2>Other Projects</h2>
 
       <span>
-        <article class="recent-projects-card">
+        <article class="recent-projects-card fetch-project">
           <img src="../public/projects-section/4.jpg" alt="orbit-img" />
           <h3>Orbit</h3>
           <p>UI Design</p>
-          <a href="">Learn More</a>
+          <a href="#" onClick="setDataProject(3)">Learn More</a>
         </article>
 
-        <article class="recent-projects-card">
+        <article class="recent-projects-card fetch-project">
           <img src="../public/projects-section/5.jpg" alt="Simplify-img" />
           <h3>Purify</h3>
           <p>UI/UX Design</p>
-          <a href="">Learn More</a>
+          <a href="#" onClick="setDataProject(2)">Learn More</a>
         </article>
 
-        <article class="recent-projects-card vectorify">
+        <article class="recent-projects-card vectorify fetch-project">
           <img src="../public/projects-section/6.jpg" alt="Simplify-img" />
           <h3>CryptoPie</h3>
           <p>App Development</p>
-          <a href="">Learn More</a>
+          <a href="#" onClick="setDataProject(1)">Learn More</a>
         </article>
       </span>
     </section>
 
+    <!-- SECTION QUESTIONS-EMAIL -->
     <section class="questions-email">
       <h2>Do you have any questions?</h2>
       <h3>Let us help you!</h3>
@@ -122,9 +130,10 @@
           />
         </svg>
 
-        <input type="email" value="Enter your email" />
-        <!-- añadir logo email -->
-        <button class="blue-btn">Subscribe</button>
+      
+          <input type="email" value="Enter your email" />          
+          <button class="blue-btn">Subscribe</button>
+      
       </form>
     </section>
     <!-- FOOTER -->
@@ -153,5 +162,7 @@
         </span>
       </div>
     </footer>
+
+    <script src="../JS/homepage.js"></script>
   </body>
 </html>

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../Styles/homepage.css" />
   </head>
   <body>
-    
     <!-- HEADER -->
     <header>
       <nav>
@@ -22,7 +21,9 @@
           <a href="#our-services"><h3>Services</h3></a>
         </div>
 
-        <button class="blue-btn"> <a class="header-btn" href="./contact.html">Contact Us</a></button>
+        <button class="blue-btn">
+          <a class="header-btn" href="./contact.html">Contact Us</a>
+        </button>
       </nav>
     </header>
 
@@ -78,28 +79,26 @@
       </h2>
 
       <span>
-
         <article class="recent-projects-card fetch-project">
           <img src="../public/projects-section/1.jpg" alt="Simplify-img" />
           <h3 class="project-name">Proyecto 1</h3>
           <p>AAUI Design & App Development</p>
-          <a href="">Learn More</a>
+          <a onClick="setDataProject(3)" href="./project.html#section-simplify">Learn More</a>
         </article>
 
         <article class="recent-projects-card fetch-project">
           <img src="../public/projects-section/2.jpg" alt="Simplify-img" />
           <h3 class="project-name">Proyecto 2</h3>
           <p>AAWeb Development</p>
-          <a href="">Learn More</a>
+          <a onClick="setDataProject(2)" href="./project.html#section-simplify">Learn More</a>
         </article>
 
         <article class="recent-projects-card vectorify fetch-project">
           <img src="../public/projects-section/3.jpg" alt="Simplify-img" />
           <h3 class="project-name">Proyecto 3</h3>
           <p>AAUser Experience Design</p>
-          <a href="">Learn More</a>
+          <a onClick="setDataProject(3)" href="./project.htmlsection-simplify#section-simplify">Learn More</a>
         </article>
-
       </span>
     </section>
 
@@ -206,9 +205,11 @@
           />
         </svg>
 
-        <input type="email" value="Enter your email" />
-        <!-- añadir logo email -->
-        <button class="blue-btn">Subscribe</button>
+       
+          <input type="email" value="Enter your email" />
+          
+          <button class="blue-btn">Subscribe</button>
+       
       </form>
     </section>
     <!-- FOOTER -->
