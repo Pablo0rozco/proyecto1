@@ -166,7 +166,7 @@ a:visited {
   background-color: white;
   width: 31%;
   min-height: 30%;
-  height: 25vw;
+  height: 35em;
 }
 
 .recent-projects-card h3,
@@ -185,6 +185,7 @@ a {
 }
 
 .recent-projects-card a {
+  text-decoration: none;
 }
 
 .recent-projects-card img {
@@ -368,8 +369,7 @@ footer {
   height: 5%;
   
   padding-top: 3%;
-  padding-right: 10%;
-  padding-left: 10%;
+  
 }
 
 footer img {

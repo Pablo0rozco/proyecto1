@@ -4,12 +4,13 @@
 
 * {
   font-family: Roboto;
+ 
 }
 
 body {
   position: relative;
   width: 1440px;
-  height: 4490px;
+  height: auto;
   margin: auto;
   background-color: #f2f4fc;
 }
@@ -17,7 +18,7 @@ body {
 /*!------------------------------ HEADER / NAVBAR --------------------- */
 
 header {
-  width: 100%;
+  width: 100%;  
 }
 
 nav {
@@ -25,7 +26,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  border: 1px solid black;
+  
 }
 nav img {
   padding-bottom: 1vw;
@@ -66,3 +67,180 @@ a:visited {
   width: 14%;
   height: 2.8em;
 }
+
+/*!------------------------------ SECTION 1 SIMPLIFY --------------------- */
+
+#section-simplify {
+  margin-top: 10%;
+}
+
+#section-simplify h1 {
+  font-size: 400%;
+  margin-bottom: 0;
+}
+
+#section-simplify span {
+  color: #6B708D;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin-bottom: 5%;
+}
+
+#section-simplify img {
+  max-width: 100%;
+   
+  
+}
+
+#section-simplify p {  
+  margin: 0;
+  margin-top: 70px;
+  font-size: 160%;
+  color: #6B708D;
+}
+
+
+
+
+
+/*!------------------------------ SECTION 3 CARDS-RECENT-PROJECTS --------------------- */
+
+
+
+
+.card-section {
+  margin-top: 5vw;  
+  display: flex;
+  flex-direction: column;
+}
+
+.card-section h2 {
+  font-size: 300%;
+  margin-bottom: 4vw;
+}
+
+.card-section span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recent-projects-card {
+  display: block;
+  background-color: white;
+  width: 31%;
+  min-height: 30%;
+  height: 40em;
+}
+
+.recent-projects-card h3,
+p,
+a {
+  margin-top: 1vw;
+  margin-left: 2vw;
+}
+
+.recent-projects-card h3 {
+  font-size: 200%;
+  font-weight:normal;
+}
+
+.recent-projects-card p {
+  padding-bottom: 1.5vw;
+  font-size: 170%;
+  color: #6B708D;
+}
+
+.recent-projects-card a {
+  text-decoration: none;
+  font-size: 150%;
+
+}
+
+.recent-projects-card img {
+  max-width: 100%;
+}
+
+
+/*!------------------------------ SECTION 6 QUESTIONS-EMAIL --------------------- */
+.questions-email {  
+  margin-top: 2vw;
+  width: 120%;
+  height: 13%;
+  min-height: 500px;
+  margin-left: -10%;
+  background-color: #ffc600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-email h2 {
+  font-size: 300%;
+}
+
+.questions-email h3 {
+  margin-top: -1%;
+  margin-bottom: 5%;
+  font-size: 150%;
+}
+
+.questions-email input {
+  width: 393px;
+  height: 80px;
+}
+
+.questions-email button {
+  width: 198px;
+  height: 80px;
+}
+
+
+/*!------------------------------ SECTION 7 FOOTER --------------------- */
+
+footer {
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5%;
+  
+  padding-top: 3%;
+  
+}
+
+footer img {
+  width: 50%;
+}
+footer p {
+  margin-left: 0;
+  font-style: normal;
+}
+
+footer a {
+  text-decoration: none; 
+  margin-left: 0; 
+  
+  
+}
+
+
+.anchor-footer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10%;  
+
+}
+
+.anchor-footer span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
