@@ -206,8 +206,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 5%;
-  
+  height: 5%;  
   padding-top: 3%;
   
 }
@@ -221,12 +220,17 @@ footer p {
 }
 
 footer a {
+  color: white;
   text-decoration: none; 
-  margin-left: 0; 
-  
-  
+  margin-left: 0;   
 }
 
+
+footer div span a {
+  color: #6b708d !important;
+  font-size: 1.4em;
+  
+}
 
 .anchor-footer {
   width: 50%;
@@ -241,6 +245,7 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  padding-bottom: 7%;
+    
 }
 
