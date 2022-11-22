@@ -117,10 +117,27 @@ a:visited {
 /*todo DERECHA */
 
 .caja-dch {
+  
   display: flex;
   flex-direction: column;
   width: 50%;
 }
+
+.little-card1 {
+  position: absolute;
+  max-width:30%;
+  margin-left: -7.5%;
+  
+}
+
+.little-card2 {
+  position: absolute;
+  max-width: 30%;
+  margin-left: 26.8%;
+  margin-top: 35%;
+}
+
+
 
 .empower img {
   width: 100%;
