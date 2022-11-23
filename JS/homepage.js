@@ -49,6 +49,7 @@ function setDataProject() {
   const QueryString = window.location.search;
   const urlParams = new URLSearchParams(QueryString);
   pos = urlParams.get("pos");
+  
   console.log(pos)
   date.innerText = globalData[pos].completed_on;
   title.innerText = globalData[pos].name;
