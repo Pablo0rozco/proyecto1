@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/*!------------------------------ GENERALES--------------------- */
+
+* {
+  font-family: Roboto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  width: 100vw;
+  background-color: #f2f4fc;
+}
+
+#main-container {
+  width: 80%;
+}
+
+/*!------------------------------ HEADER / NAVBAR --------------------- */
+
+header {
+  width: 100%;
+  padding-bottom: 2vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 3%;
+}
+nav img {
+  padding-bottom: 1vw;
+  width: 5vw;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.1vw;
+  align-items: flex-end;
+}
+.navigation a {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-decoration: none;
+  color: #6b708d;
+}
+
+.navigation a:active {
+  color: #072ac8;
+}
+
+.header-btn {
+  color: white !important;
+  background-color: #072ac8;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-btn {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1.1vw;
+  border: none;
+  color: #f2f4fc;
+  background-color: #072ac8;
+  width: 10vw;
+  height: 3em;
+  padding: 0;
+}
+
+/*!------------------------------ SECTION 1 SIMPLIFY --------------------- */
+
+#section-simplify {
+  padding-top: 3vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-simplify h1 {
+  font-size: 4.3vw;
+  margin-bottom: 1vw;
+}
+
+#section-simplify span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2vw;
+}
+
+#section-simplify h2 {
+  color: #6b708d;
+}
+
+#section-simplify h3 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5%;
+  font-weight: 500;
+}
+
+.data-holder {
+  color: #6b708d;
+}
+
+#section-simplify img {
+  width: 100%;
+  padding-bottom: 3vw;
+}
+
+#section-simplify p {
+  color: #6b708d;
+  font-size: 1.5vw;
+}
+
+/*!------------------------------ SECTION 2 OTHER PROJECTS --------------------- */
+
+.card-section {
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-section h2 {
+  color: #292e47;
+  font-size: 2.5vw;
+}
+
+.card-section span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recent-projects-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  width: 25vw;
+  padding-bottom: 2%;
+}
+.recent-projects-card img {
+  max-width: 100%;
+}
+.recent-projects-card h3 {
+  color: #292e47;
+  font-size: 2vw;
+  padding-left: 2vw;
+}
+
+.recent-projects-card p {
+  color: #6b708d;
+  font-size: 1.3vw;
+  padding-left: 2vw;
+  margin-top: 0;
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
+.recent-projects-card a {
+  font-size: 1.5vw;
+  padding-left: 2vw;
+  text-decoration: none;
+  padding-bottom: 1vw;
+}
+
+/*!------------------------------ SECTION 3 EMAIL QUESTIONS --------------------- */
+
+.questions-email {
+  width: 115%;
+  margin-left: -7.5%;
+  background-color: #ffc600;
+  padding-bottom: 8vw;
+  margin-bottom: 8vw;
+}
+
+.questions-email h2 {
+  color: #292e47;
+  display: flex;
+  justify-content: center;
+  padding-top: 8vw;
+  font-size: 2.8vw;
+}
+
+.questions-email h3 {
+  color: #292e47;
+  font-size: 1.8vw;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  padding-bottom: 2vw;
+}
+
+.questions-email form {
+  display: flex;
+  justify-content: center;
+}
+
+.questions-email input {
+  width: 20vw;
+  padding-left: 4vw;
+  border: none;
+  margin-right: 1vw;
+}
+
+.questions-email svg {
+  width: 2vw;
+  position: absolute;
+  margin-left: -30%;
+  margin-top: 0.8%;
+}
+
+/*!------------------------------ SECTION 4 FOOTER --------------------- */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer img {
+  padding-top: 1vw;
+  width: 6vw;
+}
+
+footer p {
+  font-size: 1vw;
+  font-style: normal;
+  color: #6b708d;
+}
+
+.anchor-footer {
+  width: 30vw;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+}
+
+.anchor-footer a {
+  color: #6b708d;
+  text-decoration: none;
+  padding-bottom: 4vw;
+}
