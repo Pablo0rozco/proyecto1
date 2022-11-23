@@ -10,7 +10,7 @@ function fetchData() {
     .then((data) => {
       modifyData(data);
       globalData = data;
-      console.log("Parsed response: ", data);
+      //console.log("Parsed response: ", data);
     })
     .catch((err) => console.log(err));
 }
@@ -37,11 +37,11 @@ let image = document.querySelector(".section-simplify-img");
 let content = document.querySelector("#section-simplify p");
 let date = document.querySelector(".data-holder");
 
-console.log(title.innerText);
+/* console.log(title.innerText);
 console.log(description.innerText);
 console.log(image.src);
 console.log(content.innerText);
-console.log(date.innerText);
+console.log(date.innerText); */
 
 function setDataProject(pos) {
   date.innerText = globalData[pos].completed_on;
@@ -50,3 +50,23 @@ function setDataProject(pos) {
   image.src = globalData[pos].image;
   content.innerText = globalData[pos].content;
 }
+
+// Arrow function to get the parameter
+// of the specified key
+getParameter = (key) => {
+  // Address of the current window
+  address = window.location.search;
+  console.log(address);
+
+  // Returns a URLSearchParams object instance
+  parameterList = new URLSearchParams(address);
+  console.log(parameterList);
+  
+
+  return parameterList.get(key);
+};
+
+console.log(getParameter("pos"));
+
+
+
