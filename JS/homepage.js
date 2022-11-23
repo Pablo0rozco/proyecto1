@@ -1,16 +1,16 @@
 let globalData;
 
-function fetchData() {
-  fetch(
+async function fetchData() {
+   return fetch(
     "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
   )
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      modifyData(data);
+      modifyData(data);      
       globalData = data;
-      //console.log("Parsed response: ", data);
+      console.log("Parsed response: ", data);
     })
     .catch((err) => console.log(err));
 }
@@ -37,13 +37,19 @@ let image = document.querySelector(".section-simplify-img");
 let content = document.querySelector("#section-simplify p");
 let date = document.querySelector(".data-holder");
 
-/* console.log(title.innerText);
-console.log(description.innerText);
-console.log(image.src);
-console.log(content.innerText);
-console.log(date.innerText); */
+console.log(title.innerText)
+console.log(description.innerText)
+console.log(image.src)
+console.log(content.innerText)
+console.log(date.innerText)
 
-function setDataProject(pos) {
+
+//! no le paso argumento? pos
+function setDataProject() {  
+  const QueryString = window.location.search;
+  const urlParams = new URLSearchParams(QueryString);
+  pos = urlParams.get("pos");
+  console.log(pos)
   date.innerText = globalData[pos].completed_on;
   title.innerText = globalData[pos].name;
   description.innerText = globalData[pos].description;
@@ -51,22 +57,8 @@ function setDataProject(pos) {
   content.innerText = globalData[pos].content;
 }
 
-// Arrow function to get the parameter
-// of the specified key
-getParameter = (key) => {
-  // Address of the current window
-  address = window.location.search;
-  console.log(address);
 
-  // Returns a URLSearchParams object instance
-  parameterList = new URLSearchParams(address);
-  console.log(parameterList);
-  
-
-  return parameterList.get(key);
-};
-
-console.log(getParameter("pos"));
-
-
-
+async function loadProjectPage() {
+  await fetchData();
+  setDataProject();
+}
