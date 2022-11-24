@@ -1,4 +1,4 @@
-let globalData;
+let globalData; //Testing
 
 async function fetchData() {
    return fetch(
