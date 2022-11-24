@@ -1,4 +1,4 @@
-let globalData; //Testing
+let globalData;
 
 async function fetchData() {
    return fetch(
@@ -63,7 +63,3 @@ async function loadProjectPage() {
   await fetchData();
   setDataProject();
 }
-
-
-
-
