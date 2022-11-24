@@ -27,7 +27,6 @@ body {
 header {
   width: 100%;
 
-  padding-bottom: 2vw;
 }
 
 nav {
@@ -107,7 +106,6 @@ a:hover {
 
   margin-bottom: 12vw;
 
-
 }
 
 /*todo IZQUIERDA */
@@ -121,10 +119,12 @@ a:hover {
 .empower h1 {
 
   color: #292e47;
-
+  font-size: 4.3vw;
+  padding-top: 3vw;
+  margin-bottom: 2vw;
+}
 
 .empower-p {
-
   color: #6b708d;
 
   font-size: 1.3vw;
@@ -200,6 +200,7 @@ a:hover {
 .card-section h2 {
 
   color: #292e47;
+  font-size: 2.5vw;
 
 }
 
@@ -247,7 +248,6 @@ a:hover {
 .recent-projects-card a {
 
   font-size: 1.5vw;
-
 
   padding-left: 2vw;
   text-decoration: none;

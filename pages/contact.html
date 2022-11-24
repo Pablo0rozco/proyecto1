@@ -5,93 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle</title>
-    <link rel="stylesheet" href="../Styles/contact.css" />
+    <link rel="stylesheet" href="../Styles/contact1.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="../public/logos/circle.svg" alt="circle-logo" />
-        </div>
-
-        <div class="navigation">
-          <a href="./homepage.html"><h3>Home</h3></a>
-          <a href="./project.html"><h3>Projects</h3></a>
-          <a href="./homepage.html#our-services"><h3>Services</h3></a>
-        </div>
-
-        <button class="blue-btn">Contact Us</button>
-      </nav>
-    </header>
-
-    <section id="contact-section">
-      <h1>Contact Us</h1>
-      <form action="">
-        <label for="fullname">Full Name *</label>
-        <input
-          type="text"
-          name="fullname"
-          id="fullname"
-          value="Enter your full name"
-        /> 
-
-        <span>
-          <div>
-             <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value="Enter your email addres"
-          />
+    <div id="main-container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="../public/logos/circle.svg" alt="circle-logo" />
           </div>
 
-          <div>
-            <label for="phone">Phone</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            value="Enter your phone number"
-          /> 
+          <div class="navigation">
+            <a href="./homepage.html"><h3>Home</h3></a>
+            <a href="./project.html"><h3>Projects</h3></a>
+            <a href="./homepage.html#our-services"><h3>Services</h3></a>
           </div>
-         
 
+          <button class="blue-btn">Contact Us</button>
+        </nav>
+      </header>
+
+      <!-- CONTACT-SECTION -->
+
+      <section id="contact-section">
+        <h1>Contact Us</h1>
+        <form id="form" action="">
+          <label for="fullname">Full Name *</label>
           
-        </span>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Enter your full name"
+            required
+          />
 
-        <label for="message">Message</label>
-        
-        <textarea name="textarea" id="textarea" cols="30" rows="15" >Write your message here ....</textarea>
-        <button class="blue-btn">Submit</button>
-      </form>
-    </section>
+          <span>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email addres"
+              />
+            </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div>
-        <img src="../public/logos/circle.svg" alt="logo-circle" />
-        <address>
-          <p>
-            2972 Westheimer Rd. Santa Ana, <br />
-            Illinois 85486
-          </p>
-        </address>
-      </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+          </span>
 
-      <div class="anchor-footer">
-        <span>
-          <a href="">Team</a>
-          <a href="./homepage.html">Services</a>
-          <a href="">About Us</a>
-        </span>
+          <label for="message">Message</label>
 
-        <span>
-          <a href="">Press</a>
-          <a href="">Proyects</a>
-          <a href="">Privacy Policy</a>
-        </span>
-      </div>
-    </footer>
+          <textarea name="textarea" id="textarea" cols="30" rows="15" placeholder="Write your message here ....">
+</textarea
+          >
+          <button type="submit" class="blue-btn">Submit</button>
+        </form>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div>
+          <img src="../public/logos/circle.svg" alt="logo-circle" />
+          <address>
+            <p>
+              2972 Westheimer Rd. Santa Ana, <br />
+              Illinois 85486
+            </p>
+          </address>
+        </div>
+
+        <div class="anchor-footer">
+          <span>
+            <a href="">Team</a>
+            <a href="./homepage.html">Services</a>
+            <a href="">About Us</a>
+          </span>
+
+          <span>
+            <a href="">Press</a>
+            <a href="">Proyects</a>
+            <a href="">Privacy Policy</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+    <script src="../JS/contactForm.js"></script>
   </body>
 </html>

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/*!------------------------------ GENERALES--------------------- */
+
+* {
+  font-family: Roboto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  position: relative;
+  width: 100vw;
+  background-color: #f2f4fc;
+}
+
+#main-container {
+  width: 80%;
+}
+
+/*!------------------------------ HEADER / NAVBAR --------------------- */
+
+header {
+  width: 100%;
+  padding-bottom: 2vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 3%;
+}
+nav img {
+  padding-bottom: 1vw;
+  width: 5vw;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.1vw;
+  align-items: flex-end;
+}
+.navigation a {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-decoration: none;
+  color: #6b708d;
+}
+
+.navigation a:active {
+  color: #072ac8;
+}
+
+.header-btn {
+  color: white !important;
+  background-color: #072ac8;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-btn {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1.1vw;
+  border: none;
+  color: #f2f4fc;
+  background-color: #072ac8;
+  width: 10vw;
+  height: 3em;
+  padding: 0;
+}
+
+/*!------------------------------ SECTION 1 CONTACT FORM --------------------- */
+#contact-section {
+    padding-top: 3vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-section h1 {
+    font-size: 4.3vw;
+    margin-bottom: 3vw;
+}
+
+#contact-section form{
+    display: flex;
+    flex-direction: column;    
+}
+
+#contact-section form label {
+    padding-bottom: 1.5vw;
+    width: 100%;
+    color: #6B708D;
+}
+#contact-section small {
+  /* visibility: hidden; */
+  color: red;
+  
+}
+
+#contact-section input {
+    width: calc(100% - padding);
+    font-size: 1vw;
+    border: none;
+    padding: 2vw;
+    color: #6B708D;
+    background-color: #e6e9f1;
+    
+}
+#contact-section span {    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2vw;
+}
+#contact-section span div {
+    display: flex;
+    flex-direction: column;
+}
+#contact-section span div label{  
+           
+}
+#contact-section span div input{
+        
+    
+}
+#contact-section span div {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 48.5%;    
+}
+
+#contact-section #textarea {
+    width: calc(100% - padding) ;
+    resize: none;
+    border: none;
+    font-size: 1vw;
+    padding: 2vw;
+}
+
+#contact-section button {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+}
+
+
+/*!------------------------------ SECTION  FOOTER --------------------- */
+
+footer {
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5%;  
+    padding-top: 3%;
+    
+  }
+  
+  footer img {
+    width: 50%;
+  }
+  footer p {
+    margin-left: 0;
+    font-style: normal;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none; 
+    margin-left: 0;   
+  }
+  
+  
+  footer div span a {
+    color: #6b708d !important;
+    font-size: 1.4em;
+    
+  }
+  
+  .anchor-footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5%;  
+  
+  }
+  
+  .anchor-footer span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 7%;
+      
+  }
