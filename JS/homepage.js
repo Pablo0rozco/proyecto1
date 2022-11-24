@@ -1,14 +1,14 @@
 let globalData;
 
 async function fetchData() {
-   return fetch(
+  return fetch(
     "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
   )
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      modifyData(data);      
+      modifyData(data);
       globalData = data;
       console.log("Parsed response: ", data);
     })
@@ -37,20 +37,18 @@ let image = document.querySelector(".section-simplify-img");
 let content = document.querySelector("#section-simplify p");
 let date = document.querySelector(".data-holder");
 
-console.log(title.innerText)
-console.log(description.innerText)
-console.log(image.src)
-console.log(content.innerText)
-console.log(date.innerText)
+console.log(title.innerText);
+console.log(description.innerText);
+console.log(image.src);
+console.log(content.innerText);
+console.log(date.innerText);
 
-
-
-function setDataProject() {  
+function setDataProject() {
   const QueryString = window.location.search;
   const urlParams = new URLSearchParams(QueryString);
   pos = urlParams.get("pos");
-  
-  console.log(pos)
+
+  console.log(pos);
   date.innerText = globalData[pos].completed_on;
   title.innerText = globalData[pos].name;
   description.innerText = globalData[pos].description;
@@ -58,8 +56,47 @@ function setDataProject() {
   content.innerText = globalData[pos].content;
 }
 
+function randomPosition(){
+  let position = Math.floor(Math.random()* 3 + 1)
+  let randomProject = document.querySelector(".randomProject");
+  randomProject.setAttribute("href", `./project.html?pos=${position}`)    
+}
+randomPosition()
+
+
 
 async function loadProjectPage() {
-  await fetchData();
-  setDataProject();
+  if (window.location.search) {
+    await fetchData();
+    setDataProject();
+    console.log("test");
+
+    const elementToShow = document.querySelectorAll(".hidden");
+
+    console.log(elementToShow);
+
+    for (const element of elementToShow) {
+      element.classList.replace("hidden", "shown");
+    }
+
+    const elementToHide = document.querySelector(".shown");
+    console.log(elementToHide);
+    elementToHide.classList.replace("shown", "hidden");
+
+    console.log(elementToHide);
+  } else {
+    const elementToShow = document.querySelectorAll(".hidden");
+
+    console.log(elementToShow);
+
+    for (const element of elementToShow) {
+      element.classList.replace("hidden", "shown");
+    }
+
+    const elementToHide = document.querySelector(".shown");
+    console.log(elementToHide);
+    elementToHide.classList.replace("shown", "hidden");
+
+    console.log(elementToHide);
+  }
 }

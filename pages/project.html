@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle</title>
-    <link rel="icon" type="image" href="../public/logos/circle.svg">
+    <link rel="icon" type="image" href="../public/logos/circle.svg" />
     <link rel="stylesheet" href="../Styles/project1.css" />
   </head>
 
@@ -14,12 +14,16 @@
       <header>
         <nav>
           <div class="logo">
-            <a href="/pages/homepage.html"><img src="../public/logos/circle.svg" alt="circle-logo" /></a>
+            <a href="/pages/homepage.html"
+              ><img src="../public/logos/circle.svg" alt="circle-logo"
+            /></a>
           </div>
 
           <div class="navigation">
             <a href="./homepage.html"><h3>Home</h3></a>
-            <a href="./project.html" class="active"><h3>Projects</h3></a>
+            <a class="randomProject active" href="./project.html?pos=1"
+              ><h3>Projects</h3></a
+            >
             <a href="./homepage.html#our-services"><h3>Services</h3></a>
           </div>
 
@@ -29,7 +33,16 @@
         </nav>
       </header>
 
-      <section id="section-simplify">
+      <div class="shown">
+        <div class="spinner">
+          <h1>Loading Projects</h1>
+          <img
+            src="../public/services-section/spinner.gif"
+            alt="Loading spinner"
+          />
+        </div>
+      </div>
+      <section id="section-simplify" class="hidden">
         <h1>Simplify</h1>
 
         <span>
@@ -74,7 +87,7 @@
 
       <!-- PROJECTOS -->
 
-      <section class="card-section">
+      <section class="card-section" class="hidden">
         <h2>Other Projects</h2>
 
         <span>
@@ -154,14 +167,12 @@
         </div>
 
         <div class="anchor-footer">
-          
-            <a href="">Team</a>
-            <a href="">Services</a>
-            <a href="">About Us</a>          
-            <a href="">Press</a>
-            <a href="">Projects</a>
-            <a href="">Privacy Policy</a>
-          
+          <a href="">Team</a>
+          <a href="">Services</a>
+          <a href="">About Us</a>
+          <a href="">Press</a>
+          <a href="">Projects</a>
+          <a href="">Privacy Policy</a>
         </div>
       </footer>
 

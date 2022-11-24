@@ -87,6 +87,20 @@ a.active {
 
 /*!------------------------------ SECTION 1 SIMPLIFY --------------------- */
 
+.spinner{
+  width: 100%;
+  justify-content: center;
+}
+
+.hidden {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.shown {
+  visibility: visible;
+}
+
 #section-simplify {
   padding-top: 3vw;
   width: 100%;
