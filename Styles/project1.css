@@ -55,6 +55,11 @@ nav img {
   color: #6b708d;
 }
 
+a.active {
+  color: #072ac8;
+}
+
+
 .navigation a:active {
   color: #072ac8;
 }
@@ -154,7 +159,8 @@ nav img {
   padding-bottom: 2%;
 }
 .recent-projects-card img {
-  max-width: 100%;
+  object-fit: cover;
+  height: 80%; 
 }
 .recent-projects-card h3 {
   color: #292e47;
