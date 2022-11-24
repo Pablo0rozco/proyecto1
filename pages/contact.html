@@ -29,13 +29,15 @@
 
       <section id="contact-section">
         <h1>Contact Us</h1>
-        <form action="">
+        <form id="form" action="">
           <label for="fullname">Full Name *</label>
+          
           <input
             type="text"
             name="fullname"
             id="fullname"
-            value="Enter your full name"
+            placeholder="Enter your full name"
+            required
           />
 
           <span>
@@ -45,7 +47,7 @@
                 type="email"
                 name="email"
                 id="email"
-                value="Enter your email addres"
+                placeholder="Enter your email addres"
               />
             </div>
 
@@ -55,17 +57,17 @@
                 type="tel"
                 name="phone"
                 id="phone"
-                value="Enter your phone number"
+                placeholder="Enter your phone number"
               />
             </div>
           </span>
 
           <label for="message">Message</label>
 
-          <textarea name="textarea" id="textarea" cols="30" rows="15">
-Write your message here ....</textarea
+          <textarea name="textarea" id="textarea" cols="30" rows="15" placeholder="Write your message here ....">
+</textarea
           >
-          <button class="blue-btn">Submit</button>
+          <button type="submit" class="blue-btn">Submit</button>
         </form>
       </section>
 
@@ -96,5 +98,6 @@ Write your message here ....</textarea
         </div>
       </footer>
     </div>
+    <script src="../JS/contactForm.js"></script>
   </body>
 </html>

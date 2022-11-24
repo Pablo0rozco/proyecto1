@@ -44,7 +44,7 @@ console.log(content.innerText)
 console.log(date.innerText)
 
 
-//! no le paso argumento? pos
+
 function setDataProject() {  
   const QueryString = window.location.search;
   const urlParams = new URLSearchParams(QueryString);
@@ -63,3 +63,7 @@ async function loadProjectPage() {
   await fetchData();
   setDataProject();
 }
+
+
+
+

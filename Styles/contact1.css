@@ -102,8 +102,13 @@ nav img {
     padding-bottom: 1.5vw;
     width: 100%;
     color: #6B708D;
-
 }
+#contact-section small {
+  /* visibility: hidden; */
+  color: red;
+  
+}
+
 #contact-section input {
     width: calc(100% - padding);
     font-size: 1vw;
